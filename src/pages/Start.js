@@ -61,7 +61,8 @@ function Start(props) {
 
                   <Slider
                     defaultValue={table}
-                    tooltipVisible
+                    max={10}
+                    min={3}
                     onChange={(value) => {
                       setTable(value < 3 ? 3 : value);
                       setArray(value < 3 ? 3 : value);
